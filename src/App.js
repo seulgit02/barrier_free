@@ -5,6 +5,8 @@ import RegisterAccount from "./pages/RegisterAccount.js";
 import FacilityManagement from "./pages/FacilityManagement.js";
 import ServiceManagement from "./pages/ServiceManagement.js";
 import SearchFacility from "./pages/SearchFacility.js";
+import SupportCenterSearch from "./pages/SupportCenterSearch.js";
+import SupportCenterDetail from "./pages/SupportCenterDetail.js";
 function App() {
   return (
     <BrowserRouter>
@@ -14,6 +16,8 @@ function App() {
         <Route path="/facilitymanagement" element={<FacilityManagement />} />
         <Route path="/servicemanagement" element={<ServiceManagement />} />
         <Route path="/searchfacility" element={<SearchFacility />} />
+        <Route path="/searchsupportcenter" element={<SupportCenterSearch />} />
+        <Route path="/supportcenter/:id" element={<SupportCenterDetail />} />
       </Routes>
     </BrowserRouter>
   );

@@ -11,12 +11,19 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
+        {/* 로그인 */}
         <Route path="/" element={<Login />} />
+        {/* 계정 등록 */}
         <Route path="/register" element={<RegisterAccount />} />
+        {/* 로그인 */}
         <Route path="/facilitymanagement" element={<FacilityManagement />} />
+        {/* 서비스 정보관리 */}
         <Route path="/servicemanagement" element={<ServiceManagement />} />
+        {/* 시설 관리 */}
         <Route path="/searchfacility" element={<SearchFacility />} />
+        {/* 이동지원센터 관리 */}
         <Route path="/searchsupportcenter" element={<SupportCenterSearch />} />
+        {/* 이동지원센터 관리 */}
         <Route path="/supportcenter/:id" element={<SupportCenterDetail />} />
       </Routes>
     </BrowserRouter>

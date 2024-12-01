@@ -4,6 +4,8 @@
 
 .common-page {
   @apply max-w-[400px];
+  display: flex;
+  flex-direction: column;
   height: 100vh; /* 화면 높이 기준으로 세로 크기 설정 */
   aspect-ratio: 9 / 16; /* 9:20 비율 유지 */
   display: flex;
